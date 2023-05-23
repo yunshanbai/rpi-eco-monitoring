@@ -19,7 +19,7 @@ sudo service udev start
 tries=0
 max_tries=30
 while true; do
-	timeout 2s wget -q --spider http://google.com
+	timeout 2s wget -q --spider https://baidu.com
 	if [ $? -eq 0 ]; then
 		printf "Online\n"
     break
